@@ -9,7 +9,8 @@ import {
   debounceTime,
   mergeMapTo,
   mergeMap,
-  switchMap
+  switchMap,
+  catchError
 } from 'rxjs/operators';
 
 @Component({
@@ -24,9 +25,12 @@ export class AppComponent implements OnInit {
   constructor(private githubService: GithubService) {}
 
   lookup(value: string): Observable<Items> {
-    return this.githubService
-      .search(value.toLowerCase())
-      .pipe(map(results => results.items));
+    return this.githubService.search(value.toLowerCase()).pipe(
+      map(results => results.items),
+      catchError(error => {
+        return of(null);
+      })
+    );
   }
 
   ngOnInit() {

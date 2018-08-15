@@ -1,5 +1,5 @@
 <div fxFlex="600px" fxFlex.xs="100" fxFlexOffset.xs="0" fxFlexOffset="calc(50% - 300px)" fxLayout="column" style="padding: 10px;">
-  <mat-form-field class="example-full-width">
+  <mat-form-field>
     <input [formControl]="autoCompleteControl" type="text" placeholder="Pick one" aria-label="Number" matInput [matAutocomplete]="auto">
     <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
       <mat-option *ngFor="let item of githubAutoComplete$ | async; let index = index" [value]="item.name">

@@ -26,8 +26,10 @@ export class AppComponent implements OnInit {
 
   lookup(value: string): Observable<Items> {
     return this.githubService.search(value.toLowerCase()).pipe(
+      // map the item property of the github results as our return object
       map(results => results.items),
-      catchError(error => {
+      // catch errors
+      catchError(_ => {
         return of(null);
       })
     );
@@ -36,11 +38,15 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.githubAutoComplete$ = this.autoCompleteControl.valueChanges.pipe(
       startWith(''),
+      // delay emits
       debounceTime(300),
+      // use switch map so as to cancel previous subscribed events, before creating new once
       switchMap(value => {
         if (value !== '') {
+          // lookup from github
           return this.lookup(value);
         } else {
+          // if no value is pressent, return null
           return of(null);
         }
       })

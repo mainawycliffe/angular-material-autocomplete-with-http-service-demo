@@ -5,21 +5,26 @@
       "name": "app",
       "installMode": "prefetch",
       "resources": {
-        "files": [
-          "/favicon.ico",
-          "/index.html",
-          "/*.css",
-          "/*.js"
-        ]
+        "files": ["/favicon.ico", "/index.html", "/*.css", "/*.js"]
       }
-    }, {
+    },
+    {
       "name": "assets",
       "installMode": "lazy",
       "updateMode": "prefetch",
       "resources": {
-        "files": [
-          "/assets/**"
-        ]
+        "files": ["/assets/**"]
+      }
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "Github API Call",
+      "urls": ["https://api.github.com/search/repositories"],
+      "cacheConfig": {
+        "maxAge": "30m",
+        "strategy": "performance",
+        "maxSize": "10"
       }
     }
   ]

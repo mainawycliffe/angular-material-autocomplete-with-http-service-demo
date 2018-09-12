@@ -22,7 +22,7 @@ export class GithubService {
         }
       })
       .pipe(
-        map((res: Response) => {
+        map(res => {
           return res.body;
         })
       );

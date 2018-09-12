@@ -1,0 +1,82 @@
+{
+  "configVersion": 1,
+  "index": "https://github.com/MainaWycliffe/angular-material-autocomplete-with-http-service-demo/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://github.com/MainaWycliffe/angular-material-autocomplete-with-http-service-demo/favicon.ico",
+        "https://github.com/MainaWycliffe/angular-material-autocomplete-with-http-service-demo/index.html",
+        "https://github.com/MainaWycliffe/angular-material-autocomplete-with-http-service-demo/main.bc555306d376b392a034.js",
+        "https://github.com/MainaWycliffe/angular-material-autocomplete-with-http-service-demo/polyfills.7a0e6866a34e280f48e7.js",
+        "https://github.com/MainaWycliffe/angular-material-autocomplete-with-http-service-demo/runtime.a66f828dca56eeb90e02.js",
+        "https://github.com/MainaWycliffe/angular-material-autocomplete-with-http-service-demo/styles.a85abff7fc350aabe53d.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://github.com/MainaWycliffe/angular-material-autocomplete-with-http-service-demo/assets/icons/icon-128x128.png",
+        "https://github.com/MainaWycliffe/angular-material-autocomplete-with-http-service-demo/assets/icons/icon-144x144.png",
+        "https://github.com/MainaWycliffe/angular-material-autocomplete-with-http-service-demo/assets/icons/icon-152x152.png",
+        "https://github.com/MainaWycliffe/angular-material-autocomplete-with-http-service-demo/assets/icons/icon-192x192.png",
+        "https://github.com/MainaWycliffe/angular-material-autocomplete-with-http-service-demo/assets/icons/icon-384x384.png",
+        "https://github.com/MainaWycliffe/angular-material-autocomplete-with-http-service-demo/assets/icons/icon-512x512.png",
+        "https://github.com/MainaWycliffe/angular-material-autocomplete-with-http-service-demo/assets/icons/icon-72x72.png",
+        "https://github.com/MainaWycliffe/angular-material-autocomplete-with-http-service-demo/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "Github API Call",
+      "patterns": [
+        "https:\\/\\/api\\.github\\.com\\/search\\/repositories"
+      ],
+      "strategy": "performance",
+      "maxSize": "10",
+      "maxAge": 1800000,
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "https://github.com/MainaWycliffe/angular-material-autocomplete-with-http-service-demo/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "https://github.com/MainaWycliffe/angular-material-autocomplete-with-http-service-demo/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "https://github.com/MainaWycliffe/angular-material-autocomplete-with-http-service-demo/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "https://github.com/MainaWycliffe/angular-material-autocomplete-with-http-service-demo/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "https://github.com/MainaWycliffe/angular-material-autocomplete-with-http-service-demo/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "https://github.com/MainaWycliffe/angular-material-autocomplete-with-http-service-demo/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "https://github.com/MainaWycliffe/angular-material-autocomplete-with-http-service-demo/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "https://github.com/MainaWycliffe/angular-material-autocomplete-with-http-service-demo/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "https://github.com/MainaWycliffe/angular-material-autocomplete-with-http-service-demo/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
+    "https://github.com/MainaWycliffe/angular-material-autocomplete-with-http-service-demo/index.html": "983f70b546cd4a29accce11592546fd35ebcbe2b",
+    "https://github.com/MainaWycliffe/angular-material-autocomplete-with-http-service-demo/main.bc555306d376b392a034.js": "f6009a7094d94820ebe1fab9ac6df6c5e22ec389",
+    "https://github.com/MainaWycliffe/angular-material-autocomplete-with-http-service-demo/polyfills.7a0e6866a34e280f48e7.js": "9f0b8341c0a0caec1581da2f255eb5dbb8e12303",
+    "https://github.com/MainaWycliffe/angular-material-autocomplete-with-http-service-demo/runtime.a66f828dca56eeb90e02.js": "078e320cc6fdaf355836c3b1c52b059cdd33fc7e",
+    "https://github.com/MainaWycliffe/angular-material-autocomplete-with-http-service-demo/styles.a85abff7fc350aabe53d.css": "8e5f6cc6fe20f982aa11b6c8ef8663ad9bb277a4"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
